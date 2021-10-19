@@ -735,8 +735,8 @@ body{
 
 .bar{
 	display: block;
-    width: 30px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     margin: 5px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
