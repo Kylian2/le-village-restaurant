@@ -729,7 +729,7 @@ body{
 #hamburger{
 	display: none;
 	position: absolute;
-	right: 30px;
+	right: 50%;
 	top: 15px;
 }
 
