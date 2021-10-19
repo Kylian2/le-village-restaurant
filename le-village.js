@@ -1,5 +1,6 @@
 const mainHeader = document.querySelector('#main-header');
 const hamburgerMenu= document.querySelector('#hamburger-menu')
+const hamburger = document.querySelector('#hamburger')
 
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 1000 & hamburgerActiv == false) {
@@ -30,11 +31,13 @@ hamburger.addEventListener('click', () => {
 		mainHeader.classList.add('big')
 		mainHeader.classList.remove('main-header-scroll');
 		hamburgerMenu.classList.add('show')
+		hamburger.classList.add('position')
 		clickCount = 1
 		hamburgerActiv = true
 	}
 	else{
 		mainHeader.classList.remove('big')
+		hamburger.classList.remove('position')
 		hamburgerActiv = false
 		if (window.scrollY > 1000) {
 			hamburgerMenu.classList.remove('show')
